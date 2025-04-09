@@ -357,3 +357,67 @@ span {
 .experience-card:hover img {
   transform: scale(1.05);
 }
+
+/* Articel */
+
+.article-container {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.article-container p {
+  margin-bottom: 1.5rem;
+}
+
+.article-container img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.catalog {
+  padding: 10rem 9% 5rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+}

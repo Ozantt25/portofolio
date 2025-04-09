@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RUU Minerba - MFN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        color: #333;
+      }
+
+      header {
+        padding: 1rem 9%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+      }
+
+      .menu-toggle {
+        display: none;
+        font-size: 2rem;
+        color: #e3651d;
+        cursor: pointer;
+      }
+
+      nav {
+        display: flex;
+        gap: 2rem;
+      }
+
+      nav a {
+        color: #e3651d;
+        margin-left: 4rem;
+        font-size: 1.8rem;
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s ease;
+      }
+
+      nav a.active {
+        border-bottom: 3px solid #e3651d;
+      }
+
+      .article-container {
+        max-width: 900px;
+        margin: 6rem auto;
+        padding: 2rem;
+        line-height: 1.8;
+      }
+
+      .article-container img {
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+      }
+
+      .article-container h1 {
+        font-size: 3rem;
+        color: #e3651d;
+        margin-bottom: 1rem;
+      }
+
+      .article-meta {
+        font-size: 0.9rem;
+        color: #888;
+        margin-bottom: 2rem;
+      }
+
+      .back-button {
+        display: inline-block;
+        margin-top: 3rem;
+        background-color: #e3651d;
+        color: white;
+        padding: 0.8rem 2rem;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      .back-button:hover {
+        background-color: #c65414;
+      }
+
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: block;
+        }
+
+        nav {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          z-index: 1000;
+        }
+
+        nav.active {
+          display: flex;
+        }
+
+        nav a {
+          margin: 1rem 0;
+          font-size: 1.6rem;
+          text-align: center;
+        }
+
+        .article-container {
+          padding: 1rem;
+        }
+
+        .article-container h1 {
+          font-size: 2.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">MFN</a>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fa fa-bars"></i>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="creation.html" class="active">Creation</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="article-container">
+      <img src="image/artikel 1.jpg" alt="RUU Minerba" />
+      <h1>RUU Minerba: Dulu Ormas, Sekarang Kampus Juga Akan Dibungkam?</h1>
+      <div class="article-meta">Oleh Muhamad Fauzan Nasrullah - 8 Februari 2025</div>
+      <p>
+        Belakangan ini, polemik terkait Rancangan Undang-Undang Mineral dan Batubara (RUU Minerba) semakin mengundang perhatian publik. Salah satu poin kontroversial dalam rancangan tersebut adalah pemberian izin usaha tambang kepada perguruan tinggi. Kebijakan ini memicu kekhawatiran masyarakat, terutama karena sebelumnya telah terjadi polemik serupa, yakni pemberian izin usaha tambang kepada organisasi kemasyarakatan (ormas) keagamaan yang disahkan dalam Peraturan Pemerintah (PP) Nomor 25 Tahun 2024. Kedua kebijakan ini menimbulkan tanda tanya besar mengenai arah pengelolaan sumber daya alam dan dampaknya terhadap independensi lembaga-lembaga yang seharusnya menjadi pilar intelektual dan moral bangsa.
+      </p>
+      <p>
+        Di tengah situasi ini, muncul kekhawatiran yang lebih mendalam: apakah pemberian izin usaha tambang kepada kampus dan ormas keagamaan merupakan strategi terselubung untuk membungkam kritik terhadap pemerintah? Kampus sebagai pusat intelektual memiliki peran strategis dalam membangun kesadaran kritis mahasiswa dan akademisi terhadap kebijakan negara, sementara ormas keagamaan sering kali menjadi suara moral dalam berbagai isu sosial dan politik. Dengan diberikannya akses bisnis tambang, apakah kedua institusi ini akan tetap objektif dalam menjalankan peran sosialnya, atau justru malah menjadi budak oligarki?
+      </p>
+      <p>
+        Ketika ormas diberikan izin, muncul kekhawatiran bahwa kekuatan sipil dimanfaatkan untuk meredam kritik. Dan kini, ketika kampus juga dijadikan mitra dalam urusan tambang, ruang kritis akademik terancam dibungkam. Lalu, siapa yang akan bersuara untuk rakyat?
+      </p>
+      <!-- Tambahkan paragraf lain sesuai kebutuhan -->
+      <a class="back-button" href="creation.html">← Kembali ke Katalog</a>
+    </section>
+
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const nav = document.querySelector("nav");
+      mobileMenu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
